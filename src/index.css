@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Serif+Telugu:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-telugu: 'Noto Serif Telugu', serif;
+
+  --color-background: hsl(230 40% 4%);
+  --color-foreground: hsl(0 0% 98%);
+  
+  --color-primary: hsl(43 74% 60%);
+  --color-primary-foreground: hsl(230 40% 4%);
+  
+  --color-card: hsl(230 30% 7%);
+  --color-card-foreground: hsl(0 0% 98%);
+  --color-border: hsl(43 30% 15%);
+  
+  --color-muted: hsl(230 20% 12%);
+  --color-muted-foreground: hsl(230 10% 60%);
+
+  --color-accent: hsl(43 74% 60%);
+  --color-accent-foreground: hsl(230 40% 4%);
+}
+
+@layer base {
+  :root {
+    --background: 230 40% 4%;
+    --foreground: 0 0% 98%;
+    --primary: 43 74% 60%;
+    --border: 43 30% 15%;
+  }
+
+  * {
+    cursor: none !important; /* Hide default cursor for our custom golden one */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans overflow-x-hidden selection:bg-primary/30 selection:text-primary;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-normal tracking-tight;
+  }
+
+  .font-telugu {
+    font-family: var(--font-telugu);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+  
+  .gold-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FDE047] via-[#D4AF37] to-[#B45309];
+  }
+  
+  .gold-gradient-bg {
+    @apply bg-gradient-to-r from-[#FDE047] via-[#D4AF37] to-[#B45309];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(43 74% 60% / 0.4), hsl(43 74% 60% / 0.7));
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(43 74% 60% / 0.7), hsl(43 74% 60%));
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* New badge pulse */
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212,175,55,0.6); }
+  50% { box-shadow: 0 0 0 6px rgba(212,175,55,0); }
+}
+.badge-pulse {
+  animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+

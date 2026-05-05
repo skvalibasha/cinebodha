@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="te">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+
+    <!-- Primary Meta -->
+    <title>CineBodha — Telugu Knowledge Channel</title>
+    <meta name="description" content="Decoding the hidden psychology of visual storytelling. Movies, science, history and life lessons — Telugu లో." />
+    <meta name="keywords" content="CineBodha, Telugu, YouTube, psychology, science, history, movies, life lessons, cinematic" />
+    <meta name="author" content="CineBodha" />
+    <meta name="theme-color" content="#D4AF37" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CineBodha" />
+    <link rel="apple-touch-icon" href="/logo.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" sizes="192x192" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://cinebodha.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cinebodha.com/" />
+    <meta property="og:title" content="CineBodha — Telugu Knowledge Channel" />
+    <meta property="og:description" content="Decoding the hidden psychology of visual storytelling. Movies, science, history — Telugu లో." />
+    <meta property="og:image" content="https://cinebodha.com/opengraph.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CineBodha" />
+    <meta property="og:locale" content="te_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cinebodha" />
+    <meta name="twitter:creator" content="@cinebodha" />
+    <meta name="twitter:title" content="CineBodha — Telugu Knowledge Channel" />
+    <meta name="twitter:description" content="Decoding the hidden psychology of visual storytelling — Telugu లో." />
+    <meta name="twitter:image" content="https://cinebodha.com/opengraph.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Noto+Serif+Telugu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://img.youtube.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/logo.jpg" as="image" />
+    <link rel="dns-prefetch" href="https://youtube.com" />
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+
+    <!-- MS Tile -->
+    <meta name="msapplication-TileColor" content="#04070f" />
+    <meta name="msapplication-TileImage" content="/logo.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CineBodha",
+      "url": "https://cinebodha.com",
+      "description": "Decoding the hidden psychology of visual storytelling. Movies, science, history and life lessons in Telugu.",
+      "inLanguage": "te",
+      "author": {
+        "@type": "Person",
+        "name": "CineBodha",
+        "sameAs": [
+          "https://youtube.com/@cinebodha",
+          "https://www.instagram.com/cinebodhaofficial"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CineBodha",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cinebodha.com/logo.jpg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "CineBodha — Telugu Knowledge Channel",
+      "description": "Cinematic storytelling used to teach psychology, science, history, and life lessons in Telugu.",
+      "thumbnailUrl": "https://cinebodha.com/logo.jpg",
+      "uploadDate": "2024-01-01",
+      "embedUrl": "https://www.youtube.com/@cinebodha"
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

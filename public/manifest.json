@@ -1,0 +1,69 @@
+{
+  "name": "CineBodha — Telugu Knowledge Channel",
+  "short_name": "CineBodha",
+  "description": "Decoding the hidden psychology of visual storytelling. Movies, science, history and life lessons — Telugu లో.",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#04070f",
+  "theme_color": "#D4AF37",
+  "lang": "te",
+  "dir": "ltr",
+  "categories": ["education", "entertainment"],
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/opengraph.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "CineBodha — Telugu Knowledge Channel"
+    },
+    {
+      "src": "/opengraph.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "CineBodha on Mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Watch Videos",
+      "short_name": "Videos",
+      "description": "Watch CineBodha videos on YouTube",
+      "url": "https://youtube.com/@cinebodha",
+      "icons": [{ "src": "/logo.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Follow on Instagram",
+      "short_name": "Instagram",
+      "description": "Follow CineBodha on Instagram",
+      "url": "https://www.instagram.com/cinebodhaofficial",
+      "icons": [{ "src": "/logo.jpg", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineBodha — Offline</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #04070f;
+      color: #f8f8f8;
+      font-family: 'Playfair Display', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .logo { width: 80px; height: 80px; border-radius: 50%; border: 2px solid rgba(212,175,55,0.6); margin-bottom: 24px; object-fit: cover; }
+    .title { font-size: 2.5rem; font-weight: 900; margin-bottom: 8px; }
+    .gold { background: linear-gradient(135deg, #FDE047, #D4AF37, #B45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: rgba(255,255,255,0.5); font-size: 1rem; margin-bottom: 32px; font-family: sans-serif; }
+    .telugu { font-family: 'Noto Serif Telugu', serif; color: rgba(255,255,255,0.6); font-size: 1.1rem; margin-bottom: 40px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: #D4AF37; color: #04070f; font-weight: 700; padding: 14px 32px; border-radius: 999px; text-decoration: none; font-family: sans-serif; cursor: pointer; border: none; font-size: 1rem; }
+    .btn:hover { background: #FDE047; }
+    .divider { width: 80px; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent); margin: 32px auto; }
+  </style>
+</head>
+<body>
+  <img src="/logo.jpg" alt="CineBodha" class="logo" onerror="this.style.display='none'" />
+  <h1 class="title">Cine<span class="gold">Bodha</span></h1>
+  <p class="subtitle">You're currently offline</p>
+  <p class="telugu">Internet connection లేదు — reconnect అయిన తర్వాత వెళ్ళండి</p>
+  <div class="divider"></div>
+  <button class="btn" onclick="window.location.reload()">
+    ↻ Try Again
+  </button>
+</body>
+</html>
